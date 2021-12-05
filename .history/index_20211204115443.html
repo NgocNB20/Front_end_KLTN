@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css?family=Barlow+Condensed:200,300,400,400i,500,600,700,800,900%7CSatisfy&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+
+    <title>Travel</title>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div class="site-header__header-one-wrap">
+            <div class="topbar-one">
+                <div class="container-fluid">
+                    <div class="topbar-one__left">
+                        <a href="mailto:Email: sovhttdl@phutho.gov.vn">Email: sovhttdl@phutho.gov.vn</a>
+                        <a href="tel:Tel: 0210.3846.390">Tel: 0210.3846.390</a>
+                    </div>
+                    <div class="topbar-one__right"></div>
+                    <div class="main-nav__right">
+                        <div class="dropdown bootstrap-select">
+                            <select name="languages" id="languages" class="selectpicker"
+                                onchange="javascript:location.href = this.value;" tabindex="-98">
+                                <option value="/vi" selected="">Tiếng Việt</option>
+                                <option value="/en">English</option>
+                            </select>
+                            <!-- <button type="button" class="btn dropdown-toggle btn-light" data-toggle="dropdown"
+                                    role="button" data-id="languages" title="Tiếng Việt">
+                                    <div class="filter-option">
+                                        <div class="filter-option-inner">
+                                            <div class="filter-option-inner-inner">Tiếng Việt</div>
+                                        </div>
+                                    </div>
+                                </button> -->
+                            <div class="dropdown-menu " role="combobox">
+                                <div class="inner show" role="listbox" aria-expanded="false" tabindex="-1">
+                                    <ul class="dropdown-menu inner show"></ul>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="main-nav__search search-popup__toggler"><i class="fal fa-search"></i></a>
+                        <a href="#" class="main-nav__login login-popup__toggler"><i class="fal fa-user"></i></a>
+                    </div>
+                </div>
+            </div>
+            <header class="main-nav__header-one">
+                <nav class="header-navigation stricky original">
+                    <div class="container">
+                        <div class="main-nav__logo-box">
+                            <a href="/vi" class="main-nav__logo">
+                                <img src="/image/logo.png" class="main-logo" width="123px"
+                                    alt="Cổng thông tin du lịch Phú Thọ"></a>
+                            <a href="#" class="side-menu__toggler"><i class="fa fa-bars"></i></a>
+                        </div>
+                        <div class="main-nav__main-navigation">
+                            <ul class="main-nav__navigation-box">
+                                <li><a href="/vi" target="">TRANG CHỦ</a></li>
+                                <li><a href="http://phutho.vietnaminfo.net/vi/blog/details/gioi-thieu-chung-ve-tinh-phu-tho-1"
+                                        target="">GIỚI THIỆU</a></li>
+                                <li><a href="/vi/places" target="">ĐIỂM DU LỊCH</a></li>
+                                <li><a href="/vi/vtours" target="">KHÁM PHÁ 3D</a></li>
+                                <li><a href="/vi/tours" target="">TOUR DU LỊCH</a></li>
+                                <li><a href="/vi/blogs/tin-tuc-24" target="">TIN TỨC</a></li>
+                                <li><a href="/vi/hotels" target="">LƯU TRÚ</a></li>
+                                <li><a href="/vi/agencies" target="">LỮ HÀNH</a></li>
+                                <li><a href="/vi/restaurants" target="">ẨM THỰC</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- <nav class="header-navigation stricky stricked-menu">
+                    <div class="container">
+                        <div class="main-nav__logo-box"><a href="/vi" class="main-nav__logo"><img
+                                    src="/DataFiles/2021/06/Files/20210604-231727-KjblRVcf.png" class="main-logo"
+                                    width="123px" alt="Cổng thông tin du lịch Phú Thọ"></a><a href="#"
+                                class="side-menu__toggler"><i class="fa fa-bars"></i></a></div>
+                        <div class="main-nav__main-navigation">
+                            <ul class="main-nav__navigation-box">
+                                <li><a href="/vi" target="">TRANG CHỦ</a></li>
+                                <li><a href="http://phutho.vietnaminfo.net/vi/blog/details/gioi-thieu-chung-ve-tinh-phu-tho-1"
+                                        target="">GIỚI THIỆU</a></li>
+                                <li><a href="/vi/places" target="">ĐIỂM DU LỊCH</a></li>
+                                <li><a href="/vi/vtours" target="">KHÁM PHÁ 3D</a></li>
+                                <li><a href="/vi/tours" target="">TOUR DU LỊCH</a></li>
+                                <li><a href="/vi/blogs/tin-tuc-24" target="">TIN TỨC</a></li>
+                                <li><a href="/vi/hotels" target="">LƯU TRÚ</a></li>
+                                <li><a href="/vi/agencies" target="">LỮ HÀNH</a></li>
+                                <li><a href="/vi/restaurants" target="">ẨM THỰC</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav> -->
+            </header>
+        </div>
+        <section id="slide3d">
+            <div id="owl-tour3d" class="owl-carousel owl-loaded">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage"
+                        style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 6104px;">
+                        <div class="owl-item active" style="width: 1526px;">
+                            <div class="owl-slide"><iframe src="//3dbooth.egal.vn/phutho/banner/1/"
+                                    class="owl-slide-iframe"
+                                    allow="vr; xr; accelerometer; magnetometer; gyroscope; autoplay;"></iframe></div>
+                        </div>
+                        <div class="owl-item" style="width: 1526px;">
+                            <div class="owl-slide"><iframe src="//3dbooth.egal.vn/phutho/banner/2/"
+                                    class="owl-slide-iframe"
+                                    allow="vr; xr; accelerometer; magnetometer; gyroscope; autoplay;"></iframe></div>
+                        </div>
+                        <div class="owl-item" style="width: 1526px;">
+                            <div class="owl-slide"><iframe src="//3dbooth.egal.vn/phutho/banner/3/"
+                                    class="owl-slide-iframe"
+                                    allow="vr; xr; accelerometer; magnetometer; gyroscope; autoplay;"></iframe></div>
+                        </div>
+                        <div class="owl-item" style="width: 1526px;">
+                            <div class="owl-slide"><iframe src="//3dbooth.egal.vn/phutho/banner/4/"
+                                    class="owl-slide-iframe"
+                                    allow="vr; xr; accelerometer; magnetometer; gyroscope; autoplay;"></iframe></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-nav">
+                    <button type="button" role="presentation" class="owl-prev disabled">
+                        <span aria-label="Previous">‹</span>
+                    </button>
+                    <button type="button" role="presentation" class="owl-next">
+                        <span aria-label="Next">›</span>
+                    </button>
+                </div>
+                <div class="owl-dots disabled"></div>
+            </div><a href="#home-blogs2" class="scroll-down-button style5"><span></span>Cuộn xuống</a>
+        </section>
+        <section class="tour-search-one__home-two" id="home-search">
+            <div class="container">
+                <div class="tour-search-one search-form wow fadeIn animated" data-wow-duration="1500ms"
+                    id="place-search-form" data-url="/vi/place/search"
+                    style="visibility: visible; animation-duration: 1500ms; animation-name: fadeIn;">
+                    <div class="tour-search-one__inner">
+                        <div class="tour-search-one__inputs">
+                            <div class="tour-search-one__input-box"><label for="place">Điểm đến</label><input
+                                    type="text" placeholder="Tên địa điểm" name="place" id="place" value=""></div>
+                            <div class="tour-search-one__input-box"><label for="when">Thời gian</label>
+                                <div class="dropdown bootstrap-select"><select class="selectpicker" id="when"
+                                        tabindex="-98">
+                                        <option value="">Chọn thời gian</option>
+                                        <option value="1">Tháng Giêng</option>
+                                        <option value="2">Tháng Hai</option>
+                                        <option value="3">Tháng Ba</option>
+                                        <option value="4">Tháng Tư</option>
+                                        <option value="5">Tháng Năm</option>
+                                        <option value="6">Tháng Sáu</option>
+                                        <option value="7">Tháng Bảy</option>
+                                        <option value="8">Tháng Tám</option>
+                                        <option value="9">Tháng Chín</option>
+                                        <option value="10">Tháng Mười</option>
+                                        <option value="11">Tháng Mười Một</option>
+                                        <option value="12" selected="">Tháng Mười Hai</option>
+                                    </select>
+                                    <div class="dropdown-menu " role="combobox">
+                                        <div class="inner show" role="listbox" aria-expanded="false" tabindex="-1">
+                                            <ul class="dropdown-menu inner show"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tour-search-one__input-box"><label for="type">Loại hình</label>
+                                <div class="dropdown bootstrap-select"><select class="selectpicker" id="type"
+                                        tabindex="-98">
+                                        <option value="" selected="">Chọn loại hình</option>
+                                        <option value="1">Du lịch nghỉ dưỡng</option>
+                                        <option value="2">Du lịch sinh thái</option>
+                                        <option value="3">Du lịch văn hóa, lịch sử</option>
+                                        <option value="4">Du lịch tham quan, khám phá</option>
+                                        <option value="5">Du lịch MICE</option>
+                                        <option value="6">Du lịch Teambuilding</option>
+                                        <option value="7">Du lịch thể thao</option>
+                                    </select>
+                                    <div class="dropdown-menu " role="combobox">
+                                        <div class="inner show" role="listbox" aria-expanded="false" tabindex="-1">
+                                            <ul class="dropdown-menu inner show"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tour-search-one__btn-wrap"><button type="button"
+                                class="thm-btn tour-search-one__btn search-btn">Khám phá</button></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="blog-one" id="home-blogs2">
+            <div class="container">
+                <div class="block-title text-center">
+                    <p>Đừng bỏ lỡ</p>
+                    <h3>Tin tức &amp; Sự kiện</h3>
+                </div>
+                <div class="row">
+                    <div id="owl-blogs" class="owl-carousel owl-theme owl-loaded owl-drag">
+                        <div class="owl-stage-outer">
+                            <div class="owl-stage"
+                                style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 4920px;">
+                                <div class="owl-item active" style="width: 380px; margin-right: 30px;">
+                                    <div class="owl-slide wow fadeInUp animated" data-wow-duration="1500ms"
+                                        data-wow-delay="000ms"
+                                        style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+                                        <div class="blog-one__single">
+                                            <div class="blog-one__image">
+                                                <div style=""></div>
+                                                <div style="width: 100%; height: 300px; background-image: url(/DataFiles/2021/06/Files/20210605-230421-9K532hgf.jpeg);"
+                                                    class="bg-img"></div><a
+                                                    href="/vi/blog/details/du-an-nghi-duong-tai-phu-tho-noi-bat-nho-nhung-dich-vu-doc-dao-13"><i
+                                                        class="fa fa-long-arrow-alt-right"></i></a>
+                                            </div>
+                                            <div class="blog-one__content">
+                                                <ul class="list-unstyled blog-one__meta">
+                                                    <li><a href="#"><i class="far fa-calendar-alt"></i> 05/06/2021</a>
+                                                    </li>
+                                                    <li><a href="#" title="Lượt xem"><i class="far fa-eye"></i> 11</a>
+                                                    </li>
+                                                    <li><a href="#" title="Lượt thích"><i class="far fa-heart"></i>
+                                                            1</a></li>
+                                                </ul>
+                                                <h3><a
+                                                        href="/vi/blog/details/du-an-nghi-duong-tai-phu-tho-noi-bat-nho-nhung-dich-vu-doc-dao-13">Dự
+                                                        án nghỉ dưỡng tại Phú Thọ - Nổi bật nhờ những dịch vụ độc
+                                                        đáo</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item active" style="width: 380px; margin-right: 30px;">
+                                    <div class="owl-slide wow fadeInUp animated" data-wow-duration="1500ms"
+                                        data-wow-delay="000ms"
+                                        style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+                                        <div class="blog-one__single">
+                                            <div class="blog-one__image">
+                                                <div style=""></div>
+                                                <div style="width: 100%; height: 300px; background-image: url(/DataFiles/2021/06/Files/20210605-225725-A8Ecm9ZA.jpg);"
+                                                    class="bg-img"></div><a
+                                                    href="/vi/blog/details/phu-tho-sap-co-them-khu-do-thi-trung-vuong-rong-20-ha-12"><i
+                                                        class="fa fa-long-arrow-alt-right"></i></a>
+                                            </div>
+                                            <div class="blog-one__content">
+                                                <ul class="list-unstyled blog-one__meta">
+                                                    <li><a href="#"><i class="far fa-calendar-alt"></i> 05/06/2021</a>
+                                                    </li>
+                                                    <li><a href="#" title="Lượt xem"><i class="far fa-eye"></i> 6</a>
+                                                    </li>
+                                                    <li><a href="#" title="Lượt thích"><i class="far fa-heart"></i>
+                                                            1</a></li>
+                                                </ul>
+                                                <h3><a
+                                                        href="/vi/blog/details/phu-tho-sap-co-them-khu-do-thi-trung-vuong-rong-20-ha-12">Phú
+                                                        Thọ sắp có thêm khu đô thị Trưng Vương rộng 20 ha</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item active" style="width: 380px; margin-right: 30px;">
+                                    <div class="owl-slide wow fadeInUp animated" data-wow-duration="1500ms"
+                                        data-wow-delay="000ms"
+                                        style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+                                        <div class="blog-one__single">
+                                            <div class="blog-one__image">
+                                                <div style=""></div>
+                                                <div style="width: 100%; height: 300px; background-image: url(/DataFiles/2021/06/Files/20210605-225357-kavpxNYz.jpg);"
+                                                    class="bg-img"></div><a
+                                                    href="/vi/blog/details/viet-tri-phu-tho-quyet-tam-xay-dung-thanh-pho-le-hoi-coi-nguon-dan-toc-viet-nam-11"><i
+                                                        class="fa fa-long-arrow-alt-right"></i></a>
+                                            </div>
+                                            <div class="blog-one__content">
+                                                <ul class="list-unstyled blog-one__meta">
+                                                    <li><a href="#"><i class="far fa-calendar-alt"></i> 05/06/2021</a>
+                                                    </li>
+                                                    <li><a href="#" title="Lượt xem"><i class="far fa-eye"></i> 6</a>
+                                                    </li>
+                                                    <li><a href="#" title="Lượt thích"><i class="far fa-heart"></i>
+                                                            0</a></li>
+                                                </ul>
+                                                <h3><a
+                                                        href="/vi/blog/details/viet-tri-phu-tho-quyet-tam-xay-dung-thanh-pho-le-hoi-coi-nguon-dan-toc-viet-nam-11">Việt
+                                                        Trì (Phú Thọ) quyết tâm xây dựng “Thành phố lễ hội cội nguồn dân
+                                                        tộc Việt Nam”</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width: 380px; margin-right: 30px;">
+                                    <div class="owl-slide wow fadeInUp animated" data-wow-duration="1500ms"
+                                        data-wow-delay="000ms"
+                                        style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+                                        <div class="blog-one__single">
+                                            <div class="blog-one__image">
+                                                <div style=""></div>
+                                                <div style="width: 100%; height: 300px; background-image: url(/DataFiles/2021/06/Files/20210605-224142-hJLt5ykB.jpg);"
+                                                    class="bg-img"></div><a
+                                                    href="/vi/blog/details/dua-di-san-am-nhac-thanh-san-pham-du-lich-10"><i
+                                                        class="fa fa-long-arrow-alt-right"></i></a>
+                                            </div>
+                                            <div class="blog-one__content">
+                                                <ul class="list-unstyled blog-one__meta">
+                                                    <li><a href="#"><i class="far fa-calendar-alt"></i> 05/06/2021</a>
+                                                    </li>
+                                                    <li><a href="#" title="Lượt xem"><i class="far fa-eye"></i> 4</a>
+                                                    </li>
+                                                    <li><a href="#" title="Lượt thích"><i class="far fa-heart"></i>
+                                                            0</a></li>
+                                                </ul>
+                                                <h3><a
+                                                        href="/vi/blog/details/dua-di-san-am-nhac-thanh-san-pham-du-lich-10">Đưa
+                                                        di sản âm nhạc thành sản phẩm du lịch</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width: 380px; margin-right: 30px;">
+                                    <div class="owl-slide wow fadeInUp animated" data-wow-duration="1500ms"
+                                        data-wow-delay="000ms"
+                                        style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+                                        <div class="blog-one__single">
+                                            <div class="blog-one__image">
+                                                <div style=""></div>
+                                                <div style="width: 100%; height: 300px; background-image: url(/DataFiles/2021/06/Files/20210605-223456-IchvRiHa.jpg);"
+                                                    class="bg-img"></div><a
+                                                    href="/vi/blog/details/mien-que-duoi-tan-la-co-9"><i
+                                                        class="fa fa-long-arrow-alt-right"></i></a>
+                                            </div>
+                                            <div class="blog-one__content">
+                                                <ul class="list-unstyled blog-one__meta">
+                                                    <li><a href="#"><i class="far fa-calendar-alt"></i> 05/06/2021</a>
+                                                    </li>
+                                                    <li><a href="#" title="Lượt xem"><i class="far fa-eye"></i> 7</a>
+                                                    </li>
+                                                    <li><a href="#" title="Lượt thích"><i class="far fa-heart"></i>
+                                                            0</a></li>
+                                                </ul>
+                                                <h3><a href="/vi/blog/details/mien-que-duoi-tan-la-co-9">Miền quê dưới
+                                                        tán lá cọ</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width: 380px; margin-right: 30px;">
+                                    <div class="owl-slide wow fadeInUp animated" data-wow-duration="1500ms"
+                                        data-wow-delay="000ms"
+                                        style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+                                        <div class="blog-one__single">
+                                            <div class="blog-one__image">
+                                                <div style=""></div>
+                                                <div style="width: 100%; height: 300px; background-image: url(/DataFiles/2021/06/Files/20210605-222620-u5y7oDUP.jpg);"
+                                                    class="bg-img"></div><a
+                                                    href="/vi/blog/details/5-diem-khong-nen-bo-lo-khi-den-phu-tho-8"><i
+                                                        class="fa fa-long-arrow-alt-right"></i></a>
+                                            </div>
+                                            <div class="blog-one__content">
+                                                <ul class="list-unstyled blog-one__meta">
+                                                    <li><a href="#"><i class="far fa-calendar-alt"></i> 05/06/2021</a>
+                                                    </li>
+                                                    <li><a href="#" title="Lượt xem"><i class="far fa-eye"></i> 5</a>
+                                                    </li>
+                                                    <li><a href="#" title="Lượt thích"><i class="far fa-heart"></i>
+                                                            0</a></li>
+                                                </ul>
+                                                <h3><a href="/vi/blog/details/5-diem-khong-nen-bo-lo-khi-den-phu-tho-8">5
+                                                        điểm không nên bỏ lỡ khi đến Phú Thọ</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width: 380px; margin-right: 30px;">
+                                    <div class="owl-slide wow fadeInUp animated" data-wow-duration="1500ms"
+                                        data-wow-delay="000ms"
+                                        style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+                                        <div class="blog-one__single">
+                                            <div class="blog-one__image">
+                                                <div style=""></div>
+                                                <div style="width: 100%; height: 300px; background-image: url(/DataFiles/2021/06/Files/20210605-220957-efHvmH7F.jpg);"
+                                                    class="bg-img"></div><a
+                                                    href="/vi/blog/details/phu-tho-va-nhung-san-pham-du-lich-doc-dao-mang-dau-an-vung-dat-to-7"><i
+                                                        class="fa fa-long-arrow-alt-right"></i></a>
+                                            </div>
+                                            <div class="blog-one__content">
+                                                <ul class="list-unstyled blog-one__meta">
+                                                    <li><a href="#"><i class="far fa-calendar-alt"></i> 05/06/2021</a>
+                                                    </li>
+                                                    <li><a href="#" title="Lượt xem"><i class="far fa-eye"></i> 1</a>
+                                                    </li>
+                                                    <li><a href="#" title="Lượt thích"><i class="far fa-heart"></i>
+                                                            0</a></li>
+                                                </ul>
+                                                <h3><a
+                                                        href="/vi/blog/details/phu-tho-va-nhung-san-pham-du-lich-doc-dao-mang-dau-an-vung-dat-to-7">Phú
+                                                        Thọ và những sản phẩm du lịch độc đáo mang dấu ấn vùng đất
+                                                        Tổ</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width: 380px; margin-right: 30px;">
+                                    <div class="owl-slide wow fadeInUp animated" data-wow-duration="1500ms"
+                                        data-wow-delay="000ms"
+                                        style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+                                        <div class="blog-one__single">
+                                            <div class="blog-one__image">
+                                                <div style=""></div>
+                                                <div style="width: 100%; height: 300px; background-image: url(/DataFiles/2021/06/Files/20210605-220610-kmS8fAUj.jpg);"
+                                                    class="bg-img"></div><a
+                                                    href="/vi/blog/details/phu-tho-khang-dinh-thuong-hieu-du-lich-dat-to-6"><i
+                                                        class="fa fa-long-arrow-alt-right"></i></a>
+                                            </div>
+                                            <div class="blog-one__content">
+                                                <ul class="list-unstyled blog-one__meta">
+                                                    <li><a href="#"><i class="far fa-calendar-alt"></i> 05/06/2021</a>
+                                                    </li>
+                                                    <li><a href="#" title="Lượt xem"><i class="far fa-eye"></i> 2</a>
+                                                    </li>
+                                                    <li><a href="#" title="Lượt thích"><i class="far fa-heart"></i>
+                                                            0</a></li>
+                                                </ul>
+                                                <h3><a
+                                                        href="/vi/blog/details/phu-tho-khang-dinh-thuong-hieu-du-lich-dat-to-6">Phú
+                                                        Thọ: Khẳng định thương hiệu du lịch đất Tổ</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width: 380px; margin-right: 30px;">
+                                    <div class="owl-slide wow fadeInUp animated" data-wow-duration="1500ms"
+                                        data-wow-delay="000ms"
+                                        style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+                                        <div class="blog-one__single">
+                                            <div class="blog-one__image">
+                                                <div style=""></div>
+                                                <div style="width: 100%; height: 300px; background-image: url(/DataFiles/2021/06/Files/20210605-212840-vKPEj2Dk.jpeg);"
+                                                    class="bg-img"></div><a
+                                                    href="/vi/blog/details/phu-tho-gap-rut-trien-khai-5"><i
+                                                        class="fa fa-long-arrow-alt-right"></i></a>
+                                            </div>
+                                            <div class="blog-one__content">
+                                                <ul class="list-unstyled blog-one__meta">
+                                                    <li><a href="#"><i class="far fa-calendar-alt"></i> 05/06/2021</a>
+                                                    </li>
+                                                    <li><a href="#" title="Lượt xem"><i class="far fa-eye"></i> 2</a>
+                                                    </li>
+                                                    <li><a href="#" title="Lượt thích"><i class="far fa-heart"></i>
+                                                            0</a></li>
+                                                </ul>
+                                                <h3><a href="/vi/blog/details/phu-tho-gap-rut-trien-khai-5">Phú Thọ gấp
+                                                        rút triển khai</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width: 380px; margin-right: 30px;">
+                                    <div class="owl-slide wow fadeInUp animated" data-wow-duration="1500ms"
+                                        data-wow-delay="000ms"
+                                        style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+                                        <div class="blog-one__single">
+                                            <div class="blog-one__image">
+                                                <div style=""></div>
+                                                <div style="width: 100%; height: 300px; background-image: url(/DataFiles/2021/06/Files/20210605-212007-s36WCLIh.jpg);"
+                                                    class="bg-img"></div><a
+                                                    href="/vi/blog/details/phat-trien-san-pham-ocop-gan-voi-du-lich-4"><i
+                                                        class="fa fa-long-arrow-alt-right"></i></a>
+                                            </div>
+                                            <div class="blog-one__content">
+                                                <ul class="list-unstyled blog-one__meta">
+                                                    <li><a href="#"><i class="far fa-calendar-alt"></i> 05/06/2021</a>
+                                                    </li>
+                                                    <li><a href="#" title="Lượt xem"><i class="far fa-eye"></i> 2</a>
+                                                    </li>
+                                                    <li><a href="#" title="Lượt thích"><i class="far fa-heart"></i>
+                                                            0</a></li>
+                                                </ul>
+                                                <h3><a
+                                                        href="/vi/blog/details/phat-trien-san-pham-ocop-gan-voi-du-lich-4">Phát
+                                                        triển sản phẩm OCOP gắn với du lịch</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width: 380px; margin-right: 30px;">
+                                    <div class="owl-slide wow fadeInUp animated" data-wow-duration="1500ms"
+                                        data-wow-delay="000ms"
+                                        style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+                                        <div class="blog-one__single">
+                                            <div class="blog-one__image">
+                                                <div style=""></div>
+                                                <div style="width: 100%; height: 300px; background-image: url(/DataFiles/2021/06/Files/20210605-205627-gIJNrRXM.jpg);"
+                                                    class="bg-img"></div><a
+                                                    href="/vi/blog/details/phat-trien-du-lich-phai-gan-voi-bao-ve-rung-3"><i
+                                                        class="fa fa-long-arrow-alt-right"></i></a>
+                                            </div>
+                                            <div class="blog-one__content">
+                                                <ul class="list-unstyled blog-one__meta">
+                                                    <li><a href="#"><i class="far fa-calendar-alt"></i> 05/06/2021</a>
+                                                    </li>
+                                                    <li><a href="#" title="Lượt xem"><i class="far fa-eye"></i> 3</a>
+                                                    </li>
+                                                    <li><a href="#" title="Lượt thích"><i class="far fa-heart"></i>
+                                                            0</a></li>
+                                                </ul>
+                                                <h3><a
+                                                        href="/vi/blog/details/phat-trien-du-lich-phai-gan-voi-bao-ve-rung-3">Phát
+                                                        triển du lịch phải gắn với bảo vệ rừng</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width: 380px; margin-right: 30px;">
+                                    <div class="owl-slide wow fadeInUp animated" data-wow-duration="1500ms"
+                                        data-wow-delay="000ms"
+                                        style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
+                                        <div class="blog-one__single">
+                                            <div class="blog-one__image">
+                                                <div style=""></div>
+                                                <div style="width: 100%; height: 300px; background-image: url(/DataFiles/2021/06/Files/20210605-204719-u1sy93f7.png);"
+                                                    class="bg-img"></div><a
+                                                    href="/vi/blog/details/phu-tho-tim-chu-cho-khu-do-thi-nghi-duong-hon-361-ha-2"><i
+                                                        class="fa fa-long-arrow-alt-right"></i></a>
+                                            </div>
+                                            <div class="blog-one__content">
+                                                <ul class="list-unstyled blog-one__meta">
+                                                    <li><a href="#"><i class="far fa-calendar-alt"></i> 05/06/2021</a>
+                                                    </li>
+                                                    <li><a href="#" title="Lượt xem"><i class="far fa-eye"></i> 1</a>
+                                                    </li>
+                                                    <li><a href="#" title="Lượt thích"><i class="far fa-heart"></i>
+                                                            0</a></li>
+                                                </ul>
+                                                <h3><a
+                                                        href="/vi/blog/details/phu-tho-tim-chu-cho-khu-do-thi-nghi-duong-hon-361-ha-2">Phú
+                                                        Thọ tìm chủ cho khu đô thị nghỉ dưỡng hơn 361 ha</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span
+                                    aria-label="Previous">‹</span></button><button type="button" role="presentation"
+                                class="owl-next"><span aria-label="Next">›</span></button></div>
+                        <div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button
+                                role="button" class="owl-dot"><span></span></button><button role="button"
+                                class="owl-dot"><span></span></button><button role="button"
+                                class="owl-dot"><span></span></button></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            items: 1,
+            lazyLoad: true,
+            loop: true,
+            margin: 10,
+            nav: true,
+        });
+
+    </script>
+
+</body>
+
+</html>
